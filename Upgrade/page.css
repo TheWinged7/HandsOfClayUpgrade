@@ -1,0 +1,67 @@
+
+body {
+  font-family: Harrington, "Times New Roman", serif;
+  background-color:white;
+  line-height: 125%;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+
+h1 
+{
+  font-size: 200%;
+  text-align: center;
+  color: purple;
+}
+
+h2 
+{
+  font-size: 130%;
+}
+
+div.sidebar 
+{
+	position:fixed;
+	float: left;
+	margin: auto;
+	max-width: 15%;
+	height:auto;
+	border-style: groove;
+	border-width: 3px;
+	border-color: blue;
+	border-radius: 5px;
+	font-size: 110%;
+}
+
+div.content
+{
+	float: right;
+	width: 80%;
+	font-size: 130%;
+	text-align: left;
+	
+	margin: 30px;
+	margin-top:0px;
+	
+	
+	/* just for show border*/
+	border-style:solid;
+	border-color: red;
+}
+
+img.inlineImage
+{
+	float:left;
+	width:20%;
+	height:20%;
+	margin: 20px;
+	
+}
+td
+{
+	border-style:solid;
+	margin:0;
+	padding:0;
+}
