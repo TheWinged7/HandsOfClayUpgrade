@@ -29,7 +29,7 @@ $mobile=true;
 $currentPage = "home";
 include_once("./template.php");
 ?>
-                    
+                     
 					
 					<div id="placeholder" style="color:red; width:100%; float:left; padding:0; margin:0;">
 					!!!!!PLACEHOLDER TEXT!!!!!<br>

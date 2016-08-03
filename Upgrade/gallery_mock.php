@@ -57,7 +57,6 @@ $mobile=true;
 $currentPage = "gallery";
 include_once("./template.php");
 
-						
 						$showPersonal =true;
 						$showPublic =false;
 						$showClass =false;

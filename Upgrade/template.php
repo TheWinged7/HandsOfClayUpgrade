@@ -1,6 +1,6 @@
 <?php
 	
-
+ 
                         echo '<div class="sidebar" ';
                         if ($mobile) {	echo ' style= "max-width:25%"';} 
                         echo '>'; 
