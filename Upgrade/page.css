@@ -6,12 +6,13 @@ body {
   margin: 0;
   color: black;
   font-size: medium;
+  overflow-y: scroll;
 }
 
 
 h1 
 {
-  font-size: 250%;
+  font-size: 400%;
   text-align: center;
   color: purple;
 }
@@ -21,43 +22,56 @@ h2
   font-size: 130%;
 }
 
-div.sidebar 
+.headbar
 {
+	clear:both;
+	vertical-align:top;
+	margin:0;
+	left:50%;
+}
+
+
+.sidebar 
+{
+	overflow:auto;
+	clear:both;
 	position:fixed;
 	float: left;
 	margin: auto;
+	margin-left:1%;
 	max-width: 15%;
-        
-        min-width:10%;
-        
+    min-width:10%;    
 	height:auto;
-        max-height:100%;
+    max-height:100%;
+	font-size: 110%;
+	
+	
 	border-style: groove;
 	border-width: 3px;
 	border-color: blue;
 	border-radius: 5px;
-	font-size: 110%;
        
 }
 
-div.content
+.content
 {
 	float: right;
 	width: 80%;
 	font-size: 130%;
-	text-align: left;
-	
+	text-align: left;	
 	margin: 30px;
 	margin-top:0px;
-	
-	
-	/* just for show border*/
+	clear:left;
+
+
+
+	/* just for show border
 	border-style:solid;
 	border-color: red;
-        
+        */
 }
 
-img.inlineImage
+.inlineImage
 {
 	float:left;
 	max-width:20%;
@@ -67,32 +81,42 @@ img.inlineImage
 }
 
 
-img.sidebarImage
+.sidebarImage
 {
         width:auto;
-        width: 100%;
-        max-width:div.sidebar.max-width;
+        max-width:100%;
         max-height:100%;
         box-sizing: border-box
 }
 
-table
+.headbarImage
 {
-        width:100%;
-        max-width:div.sidebar.max-width;
-        box-sizing: border-box
+	width:auto;
+	margin:.5%;
+	
 }
 
-td
+.sidebarTable
+{
+        width:auto;
+        max-width:100%;
+        box-sizing: border-box;
+		padding:0;
+		margin:0;
+}
+
+.sidebarTD
 {
         text-align:center;
-        max-width:div.sidebar.max-width;
+        max-width:100%;
         min-height:50px;
-	margin:0;
-	padding:0;
-	/* just for show border*/
-	border-style:solid;
-        display: block;
+		margin:0;
+		padding:0;
+		display: block;
         box-sizing: border-box
+		
+	/* just for show border
+	border-style:solid;
+		*/
 }
 
