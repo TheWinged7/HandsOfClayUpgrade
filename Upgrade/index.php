@@ -31,7 +31,7 @@ include_once("./template.php");
 ?>
                      
 					
-					<div id="placeholder" style="color:red; width:100%; float:left; padding:0; margin:0;">
+					<div id="placeholder" style="color:black; width:100%; float:left; padding:0; margin:0;">
 					!!!!!PLACEHOLDER TEXT!!!!!<br>
 					!!!!!PLACEHOLDER TEXT!!!!!<br>
 					

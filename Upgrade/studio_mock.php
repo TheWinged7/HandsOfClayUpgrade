@@ -35,14 +35,14 @@ $currentPage = "studio";
 						{
 							echo '<img class="inlineImage" src="./images/studio.jpg" style="max-width:70%;">';
 							echo '<div style="float:left; width:100%">';
-							echo '<img class="inlineImage" src="./images/Logo2.jpg" style="max-width:30%; " >';
+							echo '<img class="inlineImage" src="./images/Logo2.png" style="max-width:30%; " >';
 						}
 					
 					else
 						{
 							echo '<div style="float:left; width:100%">';
 							echo '<img class="inlineImage" src="./images/studio.jpg" style="max-width:50%;">';
-							echo '<img class="inlineImage" src="./images/logo2.jpg" style="max-width:30%; " >';
+							echo '<img class="inlineImage" src="./images/logo2.png" style="max-width:30%; " >';
 						}
 						echo "<br>";
 						
