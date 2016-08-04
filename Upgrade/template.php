@@ -1,7 +1,7 @@
 <div class="headbar">
 		<?php  
                         echo '<h1';
-                          if ($mobile) {	echo ' style= "font-size:300%; margin-left:10%";';}
+                          if ($mobile) {	echo ' style= "font-size:300%; "';}
 						echo'>';
 			
 			echo '<img class="headbarImage" src="./images/hand004.png"';
