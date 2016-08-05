@@ -46,7 +46,7 @@
 				echo '"  alt ="Homepage Link"> 	</a>  </td> </tr>';
 				
 				
-                echo '<tr> <td class="sidebarTD"> <a href="./">					<img class="sidebarImage" src="';
+                echo '<tr> <td class="sidebarTD"> <a href="./classes_mock.php">					<img class="sidebarImage" src="';
 				if ($currentPage=="classes")
 					{echo './images/foo_current.png';}
 				else
