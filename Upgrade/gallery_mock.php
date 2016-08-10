@@ -8,7 +8,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 		
 		
-				<link href="./page.css" rel="stylesheet" type="text/css" >
+				<link href="./page.css" rel="stylesheet" type="text/css" > 
+  <script src="./js/jquery.min.js"></script> 
+                  <script src="./js/float.js"></script>
                 
                  <script src="./js/jquery.min.js"></script>
                 <link  href="./js/fotorama.css" rel="stylesheet"> 
@@ -87,7 +89,7 @@ include_once("./template.php");
 						if ($mobile)
 							{echo '80%';}
 						else
-							{echo '55%';}
+							{echo '60%';}
 						echo '"  data-ratio="800/600" data-hash="true"'; 
 						
 						if (!$showPersonal)
@@ -110,7 +112,7 @@ include_once("./template.php");
 						if ($mobile)
 							{echo '80%';}
 						else
-							{echo '55%';}
+							{echo '60%';}
 						echo '"  data-ratio="800/600" data-hash="true"'; 
 						
 						
@@ -133,7 +135,7 @@ include_once("./template.php");
 						if ($mobile)
 							{echo '80%';}
 						else
-							{echo '55%';}
+							{echo '60%';}
 						echo '"  data-ratio="800/600" data-hash="true"'; 
 						
 						if (!$showClass)
@@ -145,7 +147,7 @@ include_once("./template.php");
 						
 						foreach($personal as $value) 
 						{
-							echo '<img src="./images/Galleries/Personal/' . $value .'">';
+							echo '<img src="./images/Galleries/Classwork/' . $value .'">';
 						}
 						echo '</div>';
 						

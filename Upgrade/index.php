@@ -8,9 +8,11 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 		
 		
-				<link href="./page.css" rel="stylesheet" type="text/css" >
-                
-               
+				<link href="./page.css" rel="stylesheet" type="text/css" > 
+				<script src="./js/jquery.min.js"></script> 
+                 <script src="./js/float.js"></script>
+                 
+              
                 
 	</head>
 
@@ -31,10 +33,25 @@ include_once("./template.php");
 ?>
                      
 					
-					<div id="placeholder" style="color:black; width:100%; float:left; padding:0; margin:0;">
+					<div id="placeholder" style=" width:100%; float:left; padding:0; margin:0;">
 					!!!!!PLACEHOLDER TEXT!!!!!<br>
 					!!!!!PLACEHOLDER TEXT!!!!!<br>
 					
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br>
+				Suspendisse efficitur dui ante, eu dapibus nunc fermentum at. <br><br>
+ 				Maecenas eget nulla elementum, dignissim erat ut, vulputate justo. <br><br>
+ 				Etiam orci erat, hendrerit eu feugiat in, ultricies non ligula. <br><br>
+ 				In hac habitasse platea dictumst. <br><br>
+ 				Suspendisse in venenatis ipsum. <br><br>
+ 				Maecenas odio erat, gravida eu rutrum quis, hendrerit nec tortor. <br><br>
+ 				Integer vel urna blandit, aliquam turpis a, ultricies nisi. <br><br>
+ 				Praesent eget faucibus diam. <br><br>
+ 				Aenean ut malesuada ipsum, ut placerat diam. <br><br>
+ 				Duis sed semper enim. <br><br>
+ 				Sed ornare, sem id vulputate maximus, neque erat mattis orci, at lobortis turpis sapien eu ante. <br><br>
+ 				Nullam id sollicitudin ligula. <br><br>
+ 				Suspendisse vulputate imperdiet ipsum eu viverra. <br><br>
+ 				Mauris aliquet porttitor felis ut suscipit. <br><br>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br>
 				Suspendisse efficitur dui ante, eu dapibus nunc fermentum at. <br><br>
  				Maecenas eget nulla elementum, dignissim erat ut, vulputate justo. <br><br>

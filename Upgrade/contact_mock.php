@@ -8,7 +8,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 		
 		
-				<link href="./page.css" rel="stylesheet" type="text/css" >
+				<link href="./page.css" rel="stylesheet" type="text/css" > 
+  <script src="./js/jquery.min.js"></script> 
+                  <script src="./js/float.js"></script>
                 
                
                 

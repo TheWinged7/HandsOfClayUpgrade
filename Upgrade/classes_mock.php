@@ -8,7 +8,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 		
 		
-				<link href="./page.css" rel="stylesheet" type="text/css" >
+				<link href="./page.css" rel="stylesheet" type="text/css" > 
+  <script src="./js/jquery.min.js"></script> 
+                  <script src="./js/float.js"></script>
                 
                
                 
@@ -32,12 +34,13 @@ include_once("./template.php");
 
 echo '<table style="width:';
 					if ($mobile)
-							{echo '90%; font-size:130%';	}
+							{echo '100%; font-size:130%';	}
 						else
 							{echo '60%;';}
 					echo' ">';
 ?>
                      	
+						<!--separate classes into two tables by  booking types (adult/child or pinchpot/school holidays) -->
 					<tr> 
 						<td> <b> All classes conducted at:	</b></td>
 					</tr>
@@ -68,7 +71,23 @@ echo '<table style="width:';
 					</tr>
 					
 					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted">At $110 for 8 weeks of classes.</td>
+						<td style="padding-left:10%; font-size:90%;">At $110 for 8 weeks of classes.</td>
+					</tr>
+					
+					<tr> 
+						<td style=" font-size:90%;"><b>For bookings contact:	</b></td>
+					</tr>
+					
+					<tr> 
+						<td style="padding-left:10%; font-size:90%;"> <b>Natalie Valiente </b></td> 
+					</tr>
+					
+					<tr> 
+						<td style="padding-left:10%; font-size:90%"><b>Email:</b> natalie@handsofclay.com.au </td> 
+					</tr>
+					
+					<tr> 
+						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
 					</tr>
 					
 					
@@ -86,9 +105,24 @@ echo '<table style="width:';
 					</tr>
 					
 					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted">At $140 for 8 weeks of classes.</td>
+						<td style="padding-left:10%; font-size:90%;">At $140 for 8 weeks of classes.</td>
 					</tr>
 					
+					<tr> 
+						<td style=" font-size:90%;"><b>For bookings contact:	</b></td>
+					</tr>
+					
+					<tr> 
+						<td style="padding-left:10%; font-size:90%;"> <b>Natalie Valiente </b></td> 
+					</tr>
+					
+					<tr> 
+						<td style="padding-left:10%; font-size:90%"><b>Email:</b> natalie@handsofclay.com.au </td> 
+					</tr>
+					
+					<tr> 
+						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
+					</tr>
 					
 		
 					<tr> 
@@ -129,7 +163,7 @@ echo '<table style="width:';
 					</tr>
 					
 					<tr> 
-						<td style="padding-left:10%; font-size:90%">Phone: (02) 9824 1121 </td> 
+						<td style="padding-left:10%; font-size:90%"><b>Phone:</b> (02) 9824 1121 </td> 
 					</tr>
 					
 					<tr> 
@@ -139,7 +173,15 @@ echo '<table style="width:';
 					</tr>
 					
 					<tr> 
-						<td style="padding-top:5%"><b>For group booking enquires contact:	</b></td>
+						<td style="padding-top:5%"><b>For all other booking and enquires, 	</b></td>
+					</tr>
+					
+					<tr> 
+						<td ><b>Including school groups, and group classes 	</b></td>
+					</tr>
+					
+					<tr> 
+						<td ><b>Contact:	</b></td>
 					</tr>
 					
 					<tr> 
@@ -147,10 +189,10 @@ echo '<table style="width:';
 					</tr>
 					
 					<tr> 
-						<td style="padding-left:10%; font-size:90%">Email: natalie@handsofclay.com.au </td> 
+						<td style="padding-left:10%; font-size:90%"><b>Email:</b> natalie@handsofclay.com.au </td> 
 					</tr>
 					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;">Phone: 04 3103 2932 </td> 
+						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
 					</tr>
 					
 					
