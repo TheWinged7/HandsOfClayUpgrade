@@ -68,7 +68,7 @@ h2
 .content
 {
 	float: right;
-	width: 80%;
+	width: 70%;
 	font-size: 130%;
 	text-align: left;	
 	margin: 30px;
@@ -124,6 +124,7 @@ h2
 		border-color: #2B255C;
 		border-radius: 5px;
 		text-decoration: none;
+		background-color:#B8C3CC;
 		/*
 
 		*/

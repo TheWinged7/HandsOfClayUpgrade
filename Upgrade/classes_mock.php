@@ -9,9 +9,61 @@
 		
 		
 				<link href="./page.css" rel="stylesheet" type="text/css" > 
-  <script src="./js/jquery.min.js"></script> 
-                  <script src="./js/float.js"></script>
-                
+				<script src="./js/jquery.min.js"></script> 
+                <script src="./js/float.js"></script>
+				
+				<script>
+			
+	window.onload = function(){
+				var single = document.getElementById("singleBlurb");
+				var group = document.getElementById("groupBlurb");
+				var showSingle =true;
+				var showGroup =true;
+				
+				
+				
+				
+				
+				single.addEventListener("mouseover",function()
+						{
+							if (showSingle)
+							{this.style.background = "white";}
+						});
+				single.addEventListener("mouseout",function()
+						{
+							this.style.background = "#dee3e7";
+						});
+				single.addEventListener("click",function()
+						{
+							if (showSingle)
+								{document.getElementById("single").style.display= "block"; this.style.background = "#dee3e7";}
+							else
+								{document.getElementById("single").style.display= "none"; }
+								showSingle=!showSingle;
+						});
+						
+						
+				group.addEventListener("mouseover",function()
+						{
+							if (showGroup)
+								{this.style.background = "white";}
+							
+						});
+				group.addEventListener("mouseout",function()
+						{
+							this.style.background = "#dee3e7";
+						});
+				group.addEventListener("click",function()
+						{
+							if (showGroup)
+								{document.getElementById("group").style.display= "block"; this.style.background = "#dee3e7";}
+							else 			
+								{document.getElementById("group").style.display= "none"; }
+								showGroup=!showGroup;
+						});
+					
+			 }
+				</script>
                
                 
 	</head>
@@ -32,6 +84,48 @@ $currentPage = "classes";
 include_once("./template.php");
 
 
+echo '<div  margin-bottom:1%">';
+echo 'All classes are held at:';
+echo '<ul style="margin-top:0; list-style:none">';
+echo '<li>The Clay House </li>';
+echo '<li>1 Powerhouse Rd, Casula </li>';
+echo '<li>NSW, 2170 </li>';
+echo '</ul>';
+echo '</div >';
+
+
+echo '<div id="singleBlurb" style="border-style:solid; border-color:orange;  margin-bottom:1%"   >';
+
+	echo '<b>	Click here to show details for	</b> <ul style="margin-top:0; list-style:none; padding-left:0; " >';
+	echo '<li style="display: inline; list-style-type:none; padding-right: 2%;">Adult Classes,</li>';
+	echo '<li style="display: inline; list-style-type:none;">Child Classes</li>';
+	echo '</ul>';
+	echo '<table id="single" style="border-style:solid; border-color:red; width:100%; display:none; ">';
+		echo '<tr>';
+			echo '<td>';
+				echo 'details for each class to go here';
+			echo '</td>';
+
+		echo '</tr>';
+	echo '</table >';
+	
+echo '</div >';
+
+
+echo '<div id="groupBlurb" style="border-style:solid; border-color:purple;" >';
+	echo 'show group bookings //LIST OF BOOKINGS HERE';
+	echo '<table id="group" style="border-style:solid; border-color:green; width:100%; display:none;" >';
+		echo '<tr>';
+			echo '<td>';
+				echo 'details for each class to go here';
+			echo '</td>';
+
+		echo '</tr>';
+	echo '</table >';
+echo '</div >';
+
+
+/*
 echo '<table style="width:';
 					if ($mobile)
 							{echo '100%; font-size:130%';	}
@@ -194,10 +288,14 @@ echo '<table style="width:';
 					<tr> 
 						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
 					</tr>
-					
-					
-				</table>	
 
+
+				</table>	
+*/
+?>					
+		
+
+		
 
 
 		</div>

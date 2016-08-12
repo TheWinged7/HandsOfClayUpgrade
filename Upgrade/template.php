@@ -1,25 +1,25 @@
 <div class="headbar">
 		<?php  
                         echo '<h1';
-                          if ($mobile) {	echo ' style= "font-size:300%; "';}
+                          if ($mobile) {	echo ' style= "font-size:400%; "';}
 						echo'>';
 			
 			echo '<img class="headbarImage" src="./images/hand005_coloured.png"';
-                          if ($mobile) {	echo ' style= "width:3%"';}
+                          if ($mobile) {	echo ' style= "width:4%"';}
 			echo '>';
 			
 			echo '<img class="headbarImage" src="./images/hand003_coloured.png"';
-                          if ($mobile) {	echo ' style= "width:4%"';}
+                          if ($mobile) {	echo ' style= "width:5%"';}
 			echo '>';
 			
 			echo 'Hands of Clay';
 			
 			echo '<img class="headbarImage" src="./images/hand006_coloured.png"';
-                          if ($mobile) {	echo ' style= "width:4%"';}
+                          if ($mobile) {	echo ' style= "width:5%"';}
 			echo '>';
 			
 			echo '<img class="headbarImage" src="./images/hand004_coloured.png"';
-                          if ($mobile) {	echo ' style= "width:3%"';}
+                          if ($mobile) {	echo ' style= "width:4%"';}
 			echo '>';
 			?>
 
@@ -32,7 +32,7 @@
 <?php
 	echo '<table class="navbarTable"' ; 
     if ($mobile) 
-		{	echo ' style= "font-size:130%; margin-right:5%; height:10%"';	}
+		{	echo ' style= "font-size:150%; margin-right:5%; height:10%"';	}
     echo ' >';
     echo '<tr>';
                      
