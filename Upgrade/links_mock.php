@@ -49,9 +49,9 @@ include_once("./template.php");
 						<?php
 							echo '<image class="inlineImage" src="';
 							if ($mobile)
-								{ echo './images/FB_FindUsOnFacebook-320.png" style="max-width:500%; width:100%; height:50%; max-height:500%;';}
+								{ echo './images/logos/FB_FindUsOnFacebook-320.png" style="max-width:500%; width:50%; height:50%; max-height:500%;';}
 							else
-								{ echo './images/FB_FindUsOnFacebook-144.png" style=" max-width:30%;';}
+								{ echo './images/logos/FB_FindUsOnFacebook-144.png" style=" max-width:30%;';}
 							 
 							echo ' float:right; margin:0;  margin-right:5%;" >';
 							
@@ -66,9 +66,9 @@ include_once("./template.php");
 					<tr >
 						<td rowspan="4">
 						<?php
-							echo '<image class="inlineImage" src="./images/cpac-logo.png" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
+							echo '<image class="inlineImage" src="./images/logos/cpac-logo.png" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
 							if ($mobile)
-								{ echo ' max-width:500%; width:100%; height:50%; max-height:500%;';}
+								{ echo ' max-width:500%; width:50%; height:50%; max-height:500%;';}
 							else
 								{ echo ' max-width:30%; width:30%; ';}
 							echo '" >';
@@ -97,7 +97,7 @@ include_once("./template.php");
 					<tr >
 						<td rowspan="5">
 						<?php
-							echo '<image class="inlineImage" src="./images/living_museum_logo.jpg" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
+							echo '<image class="inlineImage" src="./images/logos/living_museum_logo.jpg" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
 							if ($mobile)
 								{ echo ' max-width:500%; width:100%; height:30%; max-height:500%;';}
 							else
@@ -130,9 +130,9 @@ include_once("./template.php");
 					<tr> 
 						<td rowspan="3" >
 						<?php
-							echo '<image class="inlineImage" src="./images/walker_ceramics_logo.png" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
+							echo '<image class="inlineImage" src="./images/logos/walker_ceramics_logo.png" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
 							if ($mobile)
-								{ echo ' max-width:500%; width:100%; height:90%; max-height:500%;';}
+								{ echo ' max-width:500%; width:50%; height:90%; max-height:500%;';}
 							else
 								{ echo ' max-width:30%;';}
 							echo '" >';
@@ -150,9 +150,9 @@ include_once("./template.php");
 					<tr>
 					<td rowspan="3">
 					<?php
-							echo '<image class="inlineImage" src="./images/Australian-Ceramics-Logo.png" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
+							echo '<image class="inlineImage" src="./images/logos/Australian-Ceramics-Logo.png" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
 							if ($mobile)
-								{ echo ' max-width:500%; width:100%; height:50%; max-height:500%;';}
+								{ echo ' max-width:500%; width:50%; height:50%; max-height:500%;';}
 							else
 								{ echo ' max-width:30%; width:30%; ';}
 							echo '" >';
@@ -169,9 +169,29 @@ include_once("./template.php");
 					<tr>
 					<td rowspan="3">
 					<?php
-							echo '<image class="inlineImage" src="./images/northcote_logo1.png" style="float:right; margin:0; margin-top:10%; margin-right:0%;';
+							echo '<image class="inlineImage" src="./images/logos/decal_specialists_logo.jpg" style="float:right; margin:0; margin-top:10%; margin-right:5%;';
 							if ($mobile)
-								{ echo ' max-width:500%; width:100%; height:40%; max-height:500%;';}
+								{ echo ' max-width:500%; width:50%; height:50%; max-height:500%;';}
+							else
+								{ echo ' max-width:30%; width:30%; ';}
+							echo '" >';
+							
+							?>
+					
+					</td>
+					<td style=" padding-top:4%;">	<a href="http://decalspecialists.com.au/" style="text-decoration: none;"> 
+							Decal Specialists</a> </td> </tr>
+					<tr> <td > Email: enquiries@decalspecialists.com.au  </td> </tr>
+					<tr> <td style="border-bottom-style: dotted;"> Phone: (02) 1300 132 771 </td> </tr>
+					
+					
+					
+					<tr>
+					<td rowspan="3">
+					<?php
+							echo '<image class="inlineImage" src="./images/logos/northcote_logo1.png" style="float:right; margin:0; margin-top:10%; margin-right:0%;';
+							if ($mobile)
+								{ echo ' max-width:500%; width:50%; height:40%; max-height:500%;';}
 							else
 								{ echo ' max-width:50%; width:50%; ';}
 							echo '" >';
@@ -188,9 +208,9 @@ include_once("./template.php");
 					
 					<td rowspan="4">
 					<?php
-							echo '<image class="inlineImage" src="./images/blackwattle_logo.jpg" style="float:right; margin:0; margin-bottom:10%; margin-right:0%;';
+							echo '<image class="inlineImage" src="./images/logos/blackwattle_logo.jpg" style="float:right; margin:0; margin-bottom:10%; margin-right:0%;';
 							if ($mobile)
-								{ echo ' max-width:500%; width:100%; height:50%; max-height:500%;';}
+								{ echo ' max-width:500%; width:100%; height:60%; max-height:500%;';}
 							else
 								{ echo ' max-width:50%; width:50%; ';}
 							echo '" >';

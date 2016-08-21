@@ -7,11 +7,7 @@ body {
   font-size: medium;
   overflow-y: scroll;
   background-color:#dee3e7;
-/*
-hand colours
-	color:#c30a37; large
-	color:#553972; small
-  */
+
 }
 
 
@@ -54,6 +50,7 @@ h2
 	background-color:#dee3e7;
 	position:static;
 	height:4%;
+	z-index:9999;
 	
 	/*
 	top:0%;
@@ -158,9 +155,17 @@ table {
 
 .fotorama__wrap 
 {
-margin-left:20%;
+	margin-left:20%;
 }
 
+.fotorama__wrap--slide  {
+    opacity: 1 !important;
+    background-color:#B8C3ff;
+}
+.fotorama__wrap--slide .fotorama__stage__frame {
+    opacity: 1 !important;
+    background-color:#B8C3CC;
+}
 
 a:visited
 {
@@ -168,4 +173,13 @@ color: blue;
 }
 
 
+.noselect
+{
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	/*user-select: none;*/
+}
 

@@ -28,9 +28,9 @@ if ($detect->isMobile() or	$detect->isTablet() )
 {
 $mobile=true;
 }
+$currentPage = "studio";
 include_once("./template.php");
 
-$currentPage = "studio";
 
                     
 					
@@ -38,14 +38,14 @@ $currentPage = "studio";
 						{
 							echo '<img class="inlineImage" src="./images/studio.jpg" style="max-width:70%;">';
 							echo '<div style="float:left; width:100%">';
-							echo '<img class="inlineImage" src="./images/Logo2.png" style="max-width:30%; " >';
+							echo '<img class="inlineImage" src="./images/Logos/Logo2.png" style="max-width:30%; " >';
 						}
 					
 					else
 						{
 							echo '<div style="float:left; width:100%">';
 							echo '<img class="inlineImage" src="./images/studio.jpg" style="max-width:50%;">';
-							echo '<img class="inlineImage" src="./images/logo2.png" style="max-width:30%; " >';
+							echo '<img class="inlineImage" src="./images/Logos/logo2.png" style="max-width:30%; " >';
 						}
 						echo "<br>";
 						
@@ -68,7 +68,7 @@ $currentPage = "studio";
 								{ echo '8%; ">';}
 						
 						
-							echo '<a href="https://www.facebook.com/TheClayhouseCasula/"><img class="inlineImage" src="./images/';
+							echo '<a href="https://www.facebook.com/TheClayhouseCasula/"><img class="inlineImage" src="./images/Logos/';
 							if ($mobile)
 								{echo 'FB_FindUsOnFacebook-320.png" style="float:right; margin-right:5%; max-width:40%">';}
 							else

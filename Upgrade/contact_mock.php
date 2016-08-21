@@ -28,7 +28,7 @@ if ($detect->isMobile() or	$detect->isTablet() )
 {
 $mobile=true;
 }
-$currentPage = "home";
+$currentPage = "contact";
 include_once("./template.php");
 ?>
                      

@@ -12,7 +12,9 @@
 				<script src="./js/jquery.min.js"></script> 
                  <script src="./js/float.js"></script>
                  
-              
+
+                <link  href="./js/fotorama.css" rel="stylesheet"> 
+                <script src="./js/fotorama.js"></script>
                 
 	</head>
 
@@ -30,12 +32,55 @@ $mobile=true;
 }
 $currentPage = "home";
 include_once("./template.php");
+
+$path = "./images/Galleries/Personal/"; 
+
+$allImages = array();    
+
+
+
+foreach (glob($path ."*.{png,jpg,jpeg}", GLOB_BRACE) as $filename) {
+    $allImages[$filename] = filemtime($filename);
+
+}
+arsort($allImages);
+$newestImages = array_slice($allImages, 0, 5);
+
+
+
 ?>
                      
 					
 					<div id="placeholder" style=" width:100%; float:left; padding:0; margin:0;">
+					
+					
+					
 					!!!!!PLACEHOLDER TEXT!!!!!<br>
 					!!!!!PLACEHOLDER TEXT!!!!!<br>
+					
+					<?php
+					
+					echo '<div id="personalGallery" style="display:inline; clear:none; margin:0" class="fotorama" data-loop="true" data-arrows="always" 
+					data-nav="thumbs" data-autoplay="true" data-width="';
+						if ($mobile)
+							{echo '80%';}
+						else
+							{echo '60%';}
+						echo '"  data-ratio="800/600" data-hash="true"'; 
+						
+						
+						
+						echo '>';
+						
+						foreach ($newestImages as $key => $value)
+						{
+							 echo '<img src="' . $key. '">';
+						}
+						echo '</div>';
+						
+						
+					
+					?>
 					
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br><br>
 				Suspendisse efficitur dui ante, eu dapibus nunc fermentum at. <br><br>

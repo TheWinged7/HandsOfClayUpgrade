@@ -5,73 +5,20 @@
 
 	<head>
 		<title>Hands of Clay - Pottery and classes for able and disabled students</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-		
-		
-				<link href="./page.css" rel="stylesheet" type="text/css" > 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8, width=device-width, initial-scale=1" >
+
+
+			<link href="./page.css" rel="stylesheet" type="text/css" > 
 				<script src="./js/jquery.min.js"></script> 
                 <script src="./js/float.js"></script>
-				
-				<script>
-			
-	window.onload = function(){
-				var single = document.getElementById("singleBlurb");
-				var group = document.getElementById("groupBlurb");
-				var showSingle =true;
-				var showGroup =true;
-				
-				
-				
-				
-				
-				single.addEventListener("mouseover",function()
-						{
-							if (showSingle)
-							{this.style.background = "white";}
-						});
-				single.addEventListener("mouseout",function()
-						{
-							this.style.background = "#dee3e7";
-						});
-				single.addEventListener("click",function()
-						{
-							if (showSingle)
-								{document.getElementById("single").style.display= "block"; this.style.background = "#dee3e7";}
-							else
-								{document.getElementById("single").style.display= "none"; }
-								showSingle=!showSingle;
-						});
-						
-						
-				group.addEventListener("mouseover",function()
-						{
-							if (showGroup)
-								{this.style.background = "white";}
-							
-						});
-				group.addEventListener("mouseout",function()
-						{
-							this.style.background = "#dee3e7";
-						});
-				group.addEventListener("click",function()
-						{
-							if (showGroup)
-								{document.getElementById("group").style.display= "block"; this.style.background = "#dee3e7";}
-							else 			
-								{document.getElementById("group").style.display= "none"; }
-								showGroup=!showGroup;
-						});
-					
-			 }
-				</script>
-               
-                
-	</head>
 
 
-	<body>
-	
-<?php
+			</head>
+
+
+			<body>
+
+				<?php
 // These lines are mandatory.
 require_once './Mobile_Detect.php';
 $detect = new Mobile_Detect;
@@ -83,219 +30,248 @@ $mobile=true;
 $currentPage = "classes";
 include_once("./template.php");
 
-
-echo '<div  margin-bottom:1%">';
-echo 'All classes are held at:';
-echo '<ul style="margin-top:0; list-style:none">';
-echo '<li>The Clay House </li>';
-echo '<li>1 Powerhouse Rd, Casula </li>';
-echo '<li>NSW, 2170 </li>';
-echo '</ul>';
-echo '</div >';
+			?>					
 
 
-echo '<div id="singleBlurb" style="border-style:solid; border-color:orange;  margin-bottom:1%"   >';
-
-	echo '<b>	Click here to show details for	</b> <ul style="margin-top:0; list-style:none; padding-left:0; " >';
-	echo '<li style="display: inline; list-style-type:none; padding-right: 2%;">Adult Classes,</li>';
-	echo '<li style="display: inline; list-style-type:none;">Child Classes</li>';
-	echo '</ul>';
-	echo '<table id="single" style="border-style:solid; border-color:red; width:100%; display:none; ">';
-		echo '<tr>';
-			echo '<td>';
-				echo 'details for each class to go here';
-			echo '</td>';
-
-		echo '</tr>';
-	echo '</table >';
-	
-echo '</div >';
 
 
-echo '<div id="groupBlurb" style="border-style:solid; border-color:purple;" >';
-	echo 'show group bookings //LIST OF BOOKINGS HERE';
-	echo '<table id="group" style="border-style:solid; border-color:green; width:100%; display:none;" >';
-		echo '<tr>';
-			echo '<td>';
-				echo 'details for each class to go here';
-			echo '</td>';
-
-		echo '</tr>';
-	echo '</table >';
-echo '</div >';
+				<div  style="margin-bottom:1%">
+					<b>	All classes are held at:	</b>
+					<ul style="margin-top:0; list-style:none">
+						<li>	<b> The Clay House	</b> </li>
+						<li>1 Powerhouse Rd, Casula </li>
+						<li>NSW, 2170 </li>
+					</ul>
+				</div >
 
 
-/*
-echo '<table style="width:';
-					if ($mobile)
-							{echo '100%; font-size:130%';	}
+				<div  style="border-style:solid; border-color:orange;  margin-bottom:2%"   >
+
+
+
+					<div id="adultTitle" >
+						<b>	Adult Classes:	</b>				 
+						<table id="adult" style="width:100%;  margin-top:0;">
+							<tr>
+								<td style=" width:100%;">
+									<?php
+						echo '<ul style="margin-top:0; margin-bottom:0; list-style:none;  padding-left:10%;';
+						if ($mobile)
+							{echo 'font-size:140%; width:80%;';}
 						else
-							{echo '60%;';}
-					echo' ">';
-?>
-                     	
-						<!--separate classes into two tables by  booking types (adult/child or pinchpot/school holidays) -->
-					<tr> 
-						<td> <b> All classes conducted at:	</b></td>
-					</tr>
+							{echo ' width:100%;';}
+						echo '">';
+					?>
+
+									<li style="display:inline; list-style-type:none; padding-right: 2%; ;  line-height:100%;">
+
+										<b>WHEN:</b>
+									</li>
+									<li style="display: inline; list-style-type:none;;  line-height:100%; ">	
+										6:30pm to 8:30pm, every Monday during school terms.
+									</li>
+
+									<li>
+									</li>
+
+									<li style="display: inline; list-style-type:none; padding-right: 2%; line-height:100%; ">
+										<b>PRICE:</b>
+									</li>
+									<li style="display: inline; list-style-type:none; ;  line-height:80%; ">
+										$140 per person for 8 weeks of classes.
+									</li>
+								</ul>
+							</td>
+
+						</tr>
+
+						<?php
+		 if ($mobile)
+			{
+				echo '<tr>	<td style="padding-top:5%; width:100%;">	</td></tr>';
+			}
+		 ?>
+
+
+					</table >
+
+				</div>
+
+				<div id="childTitle"  style=" margin-top:2%;">
+					<b>	Child Classes:	</b>			 
+
+					<table id="child" style="width:100%; margin-top:0;">
+						<tr>
+
+							<td style=" width:100%;">
+								<?php
+						echo '<ul style="margin-top:0; margin-bottom:0; list-style:none;  padding-left:10%;';
+						if ($mobile)
+							{echo 'font-size:140%; width:80%;';}
+						else
+							{echo ' width:100%;';}
+						echo '">';
+					?>
+								<li style="display:inline; list-style-type:none; padding-right: 2%;  line-height:100%;">
+
+									<b>WHEN:</b>
+								</li>
+								<li style="display: inline; list-style-type:none; line-height:100%;">	
+									4:00pm to 5:30pm, every Monday during school terms.
+
+								</li class="dummy">
+								<li>
+
+								</li>
+
+								<li style="display: inline; list-style-type:none; padding-right: 2%; line-height:100%;">
+									<b>PRICE:</b>
+								</li>
+								<li style="display: inline; list-style-type:none;  ">
+									$110 per person for 8 weeks of classes.
+								</li>
+
+							</ul>
+						</td>
+
+						<?php
+		 if ($mobile)
+			{
+				echo '<tr>	<td style="padding-top:5%; width:100%;">	</td></tr>';
+			}
+		 ?>
+
+
+					</table >
+				</div>
+
+
+
+				<div style="margin-top: 3%;">
+					<b>For bookings of Child or Adult classes, contact:</b>
+					<ul style="margin-top:0; list-style:none;  " >
+						<li style=" list-style-type:none; padding-right: 2%; font-size:120%;">
+							<b>	Natalie Valiente	</b>
+						</li>
+						<li style="; list-style-type:none;">
+							<b>	Email:	</b>	natalie@handsofclay.com.au 
+						</li>
+						<li style=" list-style-type:none;">
+							<b>	Phone:	</b>	04 3103 2932 
+						</li>
+					</ul>
+
+
+				</div>
+
+
+
+
+			</div >
+
+
+
+
+			<div  style="border-style:solid; border-color:orange;  margin-bottom:2%"  >
+				<div id="pinchTitle"  style=" margin-top:2%;">
+					<b>	Pinch Pot Classes:	</b>			 
+
+					<table id="pinch" style="width:100%; margin-top:0;">
+						<tr>
+
+							<td style=" width:100%;">
+								<?php
+						echo '<ul style="margin-top:0; margin-bottom:0; list-style:none;  padding-left:10%;';
+						if ($mobile)
+							{echo 'font-size:140%; width:80%;';}
+						else
+							{echo ' width:100%;';}
+						echo '">';
+					?>
+								<li style="display:inline; list-style-type:none; padding-right: 2%;  line-height:100%;">
+									<B>A special class for people with a disability.</B>
+								</li>
+							</li class="dummy">
+							<li>
+								<li style="display:inline; list-style-type:none; padding-right: 2%;  line-height:100%;">
+
+									<b>WHEN:</b>
+								</li>
+
+								<li style="display: inline; list-style-type:none; line-height:100%;">	
+									10:00am to 12:00pm, on the first Friday of every month.
+
+								</li class="dummy">
+								<li>
+
+								</li>
+
+								<li style="display: inline; list-style-type:none; padding-right: 2%; line-height:100%;">
+									<b>PRICE:</b>
+								</li>
+								<li style="display: inline; list-style-type:none;  ">
+									$10 per person.
+								</li>
+
+							</ul>
+						</td>
+
+						<?php
+		 if ($mobile)
+			{
+				echo '<tr>	<td style="padding-top:5%; width:100%;">	</td></tr>';
+			}
+		 ?>
+
+
+					</table >
+				</div>
+
+
+				<div style="margin-top: 3%;">
+					<b>For bookings of Pinch Pot classes or, School holiday classes, contact:</b>
+					<ul style="margin-top:0; list-style:none;  " >
+						<li style=" list-style-type:none; padding-right: 2%; font-size:120%;">
+							<b>	Casula Powerhouse Art Centre	</b>
+						</li>
+						<li style="; list-style-type:none;">
+							<b>	Email:	</b>	reception@casulapowerhouse.com
+						</li>
+						<li style=" list-style-type:none;">
+							<b>	Phone:	</b>	(02) 9824 1121 
+						</li>
+					</ul>
+
+
+				</div>
+
+			</div>
+
+
+
+			<div  style="border-style:solid; border-color:orange;  margin-bottom:2%"  >
+
+				<div style="margin-top: 3%;">
+					<b>For all other Bookings and enquiries <br>
+					Such as: <span style="margin-left:5%;"> school groups bookings or, </span>
+					<span style="margin-left:5%;"> group booking rates, contact:</b> </span>
 					 
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">The Clay House	</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">1 Powerhouse Rd, Casula	</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted">NSW, 2170	</td>
-					</tr>
-					
-					
-					<tr> 
-						<td style="padding-top:5%"><b>Child Classes:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">Mondays, during school terms</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">From 4:00pm to 5:30pm</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%;">At $110 for 8 weeks of classes.</td>
-					</tr>
-					
-					<tr> 
-						<td style=" font-size:90%;"><b>For bookings contact:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%;"> <b>Natalie Valiente </b></td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%"><b>Email:</b> natalie@handsofclay.com.au </td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
-					</tr>
-					
-					
-					
-					<tr> 
-						<td style="padding-top:5%"><b>Adult Classes:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">Mondays, during school terms</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">From 6:30pm to 8:30pm</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%;">At $140 for 8 weeks of classes.</td>
-					</tr>
-					
-					<tr> 
-						<td style=" font-size:90%;"><b>For bookings contact:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%;"> <b>Natalie Valiente </b></td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%"><b>Email:</b> natalie@handsofclay.com.au </td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
-					</tr>
-					
-		
-					<tr> 
-						<td style="padding-top:5%"><b>Pinch Pot Classes:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="font-size:90%;"> A special class for people with a disability. </td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; padding-top:2%">First Friday of every month</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">From 10:00am to 12:00pm</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted">At $10 per person.</td>
-					</tr>
-					
-					
-					<tr> 
-						<td style="padding-top:5%"><b>Bookings for classes available at:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">Casula Power House Arts Centre</td>
-					</tr>
-					
-					<tr> 					
-						<td style="padding-left:10%; font-size:90%">1 Powerhouse Rd, Casula </td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%">NSW, 2170	</td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%"><b>Phone:</b> (02) 9824 1121 </td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted">
-							<a href="http://www.casulapowerhouse.com/" style="text-decoration: none;"> www.casulapowerhouse.com </a>
-						</td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-top:5%"><b>For all other booking and enquires, 	</b></td>
-					</tr>
-					
-					<tr> 
-						<td ><b>Including school groups, and group classes 	</b></td>
-					</tr>
-					
-					<tr> 
-						<td ><b>Contact:	</b></td>
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; "> <b>Natalie Valiente </b></td> 
-					</tr>
-					
-					<tr> 
-						<td style="padding-left:10%; font-size:90%"><b>Email:</b> natalie@handsofclay.com.au </td> 
-					</tr>
-					<tr> 
-						<td style="padding-left:10%; font-size:90%; border-bottom-style:dotted;"><b>Phone:</b> 04 3103 2932 </td> 
-					</tr>
+					<ul style="margin-top:0; list-style:none;  " >
+						<li style=" list-style-type:none; padding-right: 2%; font-size:120%;">
+							<b>	Natalie Valiente	</b>
+						</li>
+						<li style="; list-style-type:none;">
+							<b>	Email:	</b>	natalie@handsofclay.com.au 
+						</li>
+						<li style=" list-style-type:none;">
+							<b>	Phone:	</b>	04 3103 2932 
+						</li>
+					</ul>
 
 
-				</table>	
-*/
-?>					
-		
+				</div>
 
-		
+			</div>
 
 
 		</div>

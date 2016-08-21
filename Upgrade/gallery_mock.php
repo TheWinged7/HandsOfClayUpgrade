@@ -9,10 +9,10 @@
 		
 		
 				<link href="./page.css" rel="stylesheet" type="text/css" > 
-  <script src="./js/jquery.min.js"></script> 
+				<script src="./js/jquery.min.js"></script> 
                   <script src="./js/float.js"></script>
                 
-                 <script src="./js/jquery.min.js"></script>
+
                 <link  href="./js/fotorama.css" rel="stylesheet"> 
                 <script src="./js/fotorama.js"></script>
                 
@@ -67,6 +67,8 @@ include_once("./template.php");
 						$publicArt = array_diff(scandir('./images/Galleries/PublicArt'), array('..', '.'));  
 						$classArt = array_diff(scandir('./images/Galleries/Classwork'), array('..', '.'));  
                         
+						arsort($personal);
+						
 						echo '<div class="gallerySelect" style="max-width:100%; ';
 						if ($mobile)
 						{
@@ -85,7 +87,7 @@ include_once("./template.php");
 						echo '</div>';
 					
 					
-						echo '<div id="personalGallery" class="fotorama"  data-nav="thumbs" data-width="';
+						echo '<div id="personalGallery" class="fotorama" data-loop="true" data-arrows="always" data-nav="thumbs" data-width="';
 						if ($mobile)
 							{echo '80%';}
 						else
